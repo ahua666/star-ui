@@ -1,52 +1,93 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+	<view class="index">
+		<my v-if="tabberPageLoadFlag[3]" :style="{display: currentIndex === 3 ? '' : 'none'}" ref="about"></my>
+		<tn-tabbar v-model="currentIndex" :list="tabbarList" activeColor="#838383" inactiveColor="#AAAAAA"
+			activeIconColor="tn-cool-bg-color-7" :animation="true" :safeAreaInsetBottom="true" @change="switchTabbar">
+		</tn-tabbar>
 	</view>
 </template>
 
 <script>
+	import My from '../my/my.vue'
 	export default {
+		components: {
+			My,
+		},
 		data() {
 			return {
-				title: 'Hello'
+				// 底部tabbar菜单数据
+				tabbarList: [{
+						title: '元素',
+						activeIcon: 'count-fill',
+				  inactiveIcon: 'menu'
+					},
+					{
+						title: '组件',
+						activeIcon: 'honor-fill',
+						inactiveIcon: 'honor'
+				 },
+					{
+						title: '页面',
+						activeIcon: 'discover',
+						inactiveIcon: 'discover'
+					},
+					{
+						title: '图鸟',
+						activeIcon: 'computer-fill',
+						inactiveIcon: 'computer',
+						dot: true
+					}
+				],
+				// tabbar当前被选中的序号
+				currentIndex: 0,
+				// 自定义底栏对应页面的加载情况
+				tabberPageLoadFlag: []
 			}
 		},
-		onLoad() {
-
+		onLoad(options) {
+			const index = Number(options.index || 0)
+			// 根据底部tabbar菜单列表设置对应页面的加载情况
+			this.tabberPageLoadFlag = this.tabbarList.map((item, tabbar_index) => {
+				return index === tabbar_index
+			})
+			this.switchTabbar(index)
+		},
+		onPageScroll(e) {
+		},
+		onReachBottom() {
 		},
 		methods: {
-
+ switchTabbar(index) {
+        this._switchTabbarPage(index)
+      },
+      
+      
+      // 导航页面滚动到底部
+      tabbarPageScrollLower(e) {
+      },
+      
+      // 切换导航页面
+      _switchTabbarPage(index) {
+        const selectPageFlag = this.tabberPageLoadFlag[index]
+        if (selectPageFlag === undefined) {
+          return
+        }
+        if (selectPageFlag === false) {
+          this.tabberPageLoadFlag[index] = true
+        }
+        this.currentIndex = index
+      }
 		}
 	}
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+	.index {
+		overflow: hidden;
+		height: 100%;
 	}
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
+	.custom-tabbar-page {
+		height: calc(100vh - (100rpx + env(safe-area-inset-bottom) / 2));
 	}
 </style>

@@ -3,21 +3,28 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+			  "navigationBarTitleText": "Star UI",
+			  "enablePullDownRefresh": false
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
+		"navigationStyle": "custom",
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "Star",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
 	"easycom": {
-	  "autoscan": true,
-	  "custom": {
-	    "^uni-(.*)": "@/components/uni-$1.vue", // 匹配components目录内的vue文件
-	    "^vue-file-(.*)": "packageName/path/to/vue-file-$1.vue" // 匹配node_modules内的vue文件
-	  }
+	  "^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue"
 	}
 }
