@@ -8,13 +8,9 @@
         <text class='icon tn-icon-home-capsule-fill'></text>
       </view>
     </tn-nav-bar> -->
-    
-    
     <view class="top-backgroup">
       <image src='https://tnuiimage.tnkjapp.com/my/my-bg2.png' mode='widthFix' class='backgroud-image'></image>
     </view>
-    
-    
     <button @click="navTuniaoHome">
       <view class="dong">
         <view class="monster">
@@ -48,6 +44,7 @@
             <!-- 图标logo -->
             <view class="logo-pic tn-shadow" >
               <view class="logo-image">
+				  <image src="http://q1.qlogo.cn/g?b=qq&nk=2524329629&s=640" style="width:88px;height: 88px; 140rpx;color: #01BEFF;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"></image>
                 <!-- <view class="tn-icon-logo-tuniao" style="font-size: 140rpx;color: #01BEFF;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"></view> -->
               </view>
             </view>
@@ -55,7 +52,7 @@
               <view class="tn-padding-right tn-padding-left-sm tn-text-xxl">
                 Star
               </view>
-              <view class="tn-padding-right tn-padding-top-xs tn-padding-left-sm tn-text-ellipsis">亲爱的会员你好吖</view>
+              <view class="tn-padding-right tn-padding-top-xs tn-padding-left-sm tn-text-ellipsis">亲爱的猎人你好吖</view>
             </view>
             
           </view>
@@ -72,7 +69,7 @@
                 <view class="tn-icon-vip"></view>
               </view>  
               <view class="tn-text-center">
-                <text class="tn-text-ellipsis">我的订单</text>
+                <text class="tn-text-ellipsis">猎人权益</text>
               </view>
             </view>
           </view>
@@ -82,27 +79,27 @@
                 <view class="tn-icon-money"></view>
               </view>  
               <view class="tn-text-center">
-                <text class="tn-text-ellipsis">余额充值</text>
+                <text class="tn-text-ellipsis">赏金余额</text>
               </view>
             </view>
           </view>
           <view class="tn-padding-sm tn-margin-xs tn-radius">
             <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
               <view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center">
-                <view class="tn-icon-ticket"></view>
+                <view class="tn-icon-like"></view>
               </view>  
               <view class="tn-text-center">
-                <text class="tn-text-ellipsis">消费明细</text>
+                <text class="tn-text-ellipsis">我的关注</text>
               </view>
             </view>
           </view>
           <view class="tn-padding-sm tn-margin-xs tn-radius">
             <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
               <view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center">
-                <view class="tn-icon-lucky-money"></view>
+                <view class="tn-icon-team"></view>
               </view>  
               <view class="tn-text-center">
-                <text class="tn-text-ellipsis">红包卡券</text>
+                <text class="tn-text-ellipsis">我的粉丝</text>
               </view>
             </view>
           </view>
@@ -111,30 +108,30 @@
           <view class="tn-padding-sm tn-margin-xs tn-radius">
             <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
               <view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center">
-                <view class="tn-icon-shop"></view>
+                <view class="tn-icon-write"></view>
               </view>  
               <view class="tn-text-center">
-                <text class="tn-text-ellipsis">积分商城</text>
+                <text class="tn-text-ellipsis">发布悬赏</text>
               </view>
             </view>
           </view>
           <view class="tn-padding-sm tn-margin-xs tn-radius">
             <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
               <view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center">
-                <view class="tn-icon-order"></view>
+                <view class="tn-icon-airplane"></view>
               </view>  
               <view class="tn-text-center">
-                <text class="tn-text-ellipsis">积分订单</text>
+                <text class="tn-text-ellipsis">接受悬赏</text>
               </view>
             </view>
           </view>
           <view class="tn-padding-sm tn-margin-xs tn-radius">
             <view class="tn-flex tn-flex-direction-column tn-flex-row-center tn-flex-col-center">
               <view class="icon12__item--icon tn-flex tn-flex-row-center tn-flex-col-center">
-                <view class="tn-icon-star"></view>
+                <view class="tn-icon-service"></view>
               </view>  
               <view class="tn-text-center">
-                <text class="tn-text-ellipsis">店铺收藏</text>
+                <text class="tn-text-ellipsis">系统仲裁</text>
               </view>
             </view>
           </view>
@@ -144,7 +141,7 @@
                 <view class="tn-icon-map"></view>
               </view>  
               <view class="tn-text-center">
-                <text class="tn-text-ellipsis">收货地址</text>
+                <text class="tn-text-ellipsis">社区服务</text>
               </view>
             </view>
           </view>
@@ -224,42 +221,34 @@
     </view>
     
     <!-- 底部tabbar start-->
-    <view class="tabbar footerfixed">
+   <!-- <view class="tabbar footerfixed">
       <view class="action">
         <view class="bar-icon">
-          <!-- <view class="tn-icon-home-smile">
-          </view> -->
           <image class="" src='https://tnuiimage.tnkjapp.com/tabbar/home_tn.png'></image>
         </view>
         <view class="tn-color-gray">首页</view>
       </view>
       <view class="action">
         <view class="bar-icon">
-          <!-- <view class="tn-icon-discover">
-          </view> -->
           <image class="" src='https://tnuiimage.tnkjapp.com/tabbar/information_tn.png'></image>
         </view>
         <view class="tn-color-gray">圈子</view>
       </view>
       <view class="action">
         <view class="bar-icon">
-          <!-- <view class="tn-icon-image-text">
-          </view> -->
           <image class="" src='https://tnuiimage.tnkjapp.com/tabbar/case_tn.png'></image>
         </view>
         <view class="tn-color-gray">福利</view>
       </view>
       <view class="action">
         <view class="bar-icon">
-          <!-- <view class="tn-icon-my">
-          </view> -->
           <image class="" src='https://tnuiimage.tnkjapp.com/tabbar/my_tnnew.png'></image>
         </view>
         <view class="tn-color-black">我的</view>
       </view>
     </view>
     <view class="tn-padding-xl"></view>
-     
+     -->
     
     <!-- 回到首页悬浮按钮-->
     <nav-index-button></nav-index-button>
@@ -277,46 +266,76 @@
     data(){
       return {
         historyData: [
-          {
-            title: '分销中心',
-            icon: 'organizatio',
-            color: 'orange',
-          },
-          {
-            title: '积分商城',
-            icon: 'level',
-            color: 'purple',
-          },
-          {
-            title: '限时秒杀',
-            icon: 'clock',
-            color: 'blue',
-          },
-          {
-            title: '社区团购',
-            icon: 'team',
-            color: 'purplered',
-          },
-          {
-            title: '大转盘',
-            icon: 'group-circle',
-            color: 'teal',
-          },
-          {
-            title: '商品核销',
-            icon: 'scan',
-            color: 'orangered',
-          },
-          {
-            title: '满减优惠',
-            icon: 'coupon',
-            color: 'indigo',
-          },
-          {
-            title: '视频直播',
-            icon: 'video',
-            color: 'green',
-          }
+			{
+				title:'实名认证',
+				icon:'identity',
+				color:'orange'
+			},
+			// {
+			// 	title:'我的足迹',
+			// 	icon:'empty-history',
+			// 	color:'purple'
+			// },
+			{
+			  title: '今晚可以',
+			  icon: 'like',
+			  color: 'orange',
+			},
+			{
+			  title: '陪我一起',
+			  icon: 'like',
+			  color: 'purple',
+			},
+			{
+			  title: '看星星吗',
+			  icon: 'like',
+			  color: 'orange',
+			},
+			// {
+			//   title: '限时秒杀',
+			//   icon: 'clock',
+			//   color: 'blue',
+			// },
+          // {
+          //   title: '分销中心',
+          //   icon: 'organizatio',
+          //   color: 'orange',
+          // },
+          // {
+          //   title: '积分商城',
+          //   icon: 'level',
+          //   color: 'purple',
+          // },
+          // {
+          //   title: '限时秒杀',
+          //   icon: 'clock',
+          //   color: 'blue',
+          // },
+          // {
+          //   title: '社区团购',
+          //   icon: 'team',
+          //   color: 'purplered',
+          // },
+          // {
+          //   title: '大转盘',
+          //   icon: 'group-circle',
+          //   color: 'teal',
+          // },
+          // {
+          //   title: '商品核销',
+          //   icon: 'scan',
+          //   color: 'orangered',
+          // },
+          // {
+          //   title: '满减优惠',
+          //   icon: 'coupon',
+          //   color: 'indigo',
+          // },
+          // {
+          //   title: '视频直播',
+          //   icon: 'video',
+          //   color: 'green',
+          // }
         ]
       }
     },
@@ -325,7 +344,7 @@
       navTuniaoHome(e) {
         wx.vibrateLong();
         uni.navigateTo({
-          url: '/pages/index/index'
+          // url: '/pages/index/index'
         })
       },
     }

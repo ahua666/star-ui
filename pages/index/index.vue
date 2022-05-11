@@ -1,8 +1,11 @@
 <template>
 	<view class="index">
+		<my v-if="tabberPageLoadFlag[0]" :style="{display: currentIndex === 0 ? '' : 'none'}" ref="about"></my>
+		<my v-if="tabberPageLoadFlag[1]" :style="{display: currentIndex === 1 ? '' : 'none'}" ref="about"></my>
+		<my v-if="tabberPageLoadFlag[2]" :style="{display: currentIndex === 2 ? '' : 'none'}" ref="about"></my>
 		<my v-if="tabberPageLoadFlag[3]" :style="{display: currentIndex === 3 ? '' : 'none'}" ref="about"></my>
 		<tn-tabbar v-model="currentIndex" :list="tabbarList" activeColor="#838383" inactiveColor="#AAAAAA"
-			activeIconColor="tn-cool-bg-color-7" :animation="true" :safeAreaInsetBottom="true" @change="switchTabbar">
+			activeIconColor="tn-cool-bg-color-16" :animation="true" :safeAreaInsetBottom="true" @change="switchTabbar">
 		</tn-tabbar>
 	</view>
 </template>
@@ -17,24 +20,24 @@
 			return {
 				// 底部tabbar菜单数据
 				tabbarList: [{
-						title: '元素',
-						activeIcon: 'count-fill',
-				  inactiveIcon: 'menu'
+						title: '首页',
+						activeIcon: 'home-smile-fill',
+						inactiveIcon: 'home-smile'
 					},
 					{
-						title: '组件',
-						activeIcon: 'honor-fill',
-						inactiveIcon: 'honor'
-				 },
-					{
-						title: '页面',
-						activeIcon: 'discover',
+						title: '圈子',
+						activeIcon: 'discover-fill',
 						inactiveIcon: 'discover'
 					},
 					{
-						title: '图鸟',
-						activeIcon: 'computer-fill',
-						inactiveIcon: 'computer',
+						title: '福利',
+						activeIcon: 'fire-fill',
+						inactiveIcon: 'fire'
+					},
+					{
+						title: '我的',
+						activeIcon: 'my-fill',
+						inactiveIcon: 'my',
 						dot: true
 					}
 				],
@@ -52,31 +55,28 @@
 			})
 			this.switchTabbar(index)
 		},
-		onPageScroll(e) {
-		},
-		onReachBottom() {
-		},
+		onPageScroll(e) {},
+		onReachBottom() {},
 		methods: {
- switchTabbar(index) {
-        this._switchTabbarPage(index)
-      },
-      
-      
-      // 导航页面滚动到底部
-      tabbarPageScrollLower(e) {
-      },
-      
-      // 切换导航页面
-      _switchTabbarPage(index) {
-        const selectPageFlag = this.tabberPageLoadFlag[index]
-        if (selectPageFlag === undefined) {
-          return
-        }
-        if (selectPageFlag === false) {
-          this.tabberPageLoadFlag[index] = true
-        }
-        this.currentIndex = index
-      }
+			switchTabbar(index) {
+				this._switchTabbarPage(index)
+			},
+
+
+			// 导航页面滚动到底部
+			tabbarPageScrollLower(e) {},
+
+			// 切换导航页面
+			_switchTabbarPage(index) {
+				const selectPageFlag = this.tabberPageLoadFlag[index]
+				if (selectPageFlag === undefined) {
+					return
+				}
+				if (selectPageFlag === false) {
+					this.tabberPageLoadFlag[index] = true
+				}
+				this.currentIndex = index
+			}
 		}
 	}
 </script>

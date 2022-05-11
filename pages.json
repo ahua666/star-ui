@@ -1,30 +1,35 @@
 {
+	"easycom": {
+		"^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
 			"style": {
-			  "navigationBarTitleText": "Star UI",
-			  "enablePullDownRefresh": false
+				"navigationBarTitleText": "Star UI",
+				"enablePullDownRefresh": false
 			}
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
-	    ,{
-            "path" : "pages/my/my",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-    ],
+	],
+	// "preloadRule": {
+	//   "pages/index/index": {
+	//     "network": "all",
+	//     "packages": ["my"]
+	//   }
+	// },
 	"globalStyle": {
 		"navigationStyle": "custom",
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "Star",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
-	},
-	"easycom": {
-	  "^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue"
 	}
+
 }
