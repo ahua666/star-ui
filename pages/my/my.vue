@@ -1,15 +1,8 @@
 <template>
   <view class="template-about tn-safe-area-inset-bottom">
-    <!-- 顶部自定义导航 -->
-    <!-- <tn-nav-bar fixed alpha customBack>
-      <view slot="back" class='tn-custom-nav-bar__back'
-        @click="goBack">
-        <text class='icon tn-icon-left'></text>
-        <text class='icon tn-icon-home-capsule-fill'></text>
-      </view>
-    </tn-nav-bar> -->
+    
     <view class="top-backgroup">
-      <image src='https://tnuiimage.tnkjapp.com/my/my-bg2.png' mode='widthFix' class='backgroud-image'></image>
+      <image src='https://s1.ax1x.com/2022/05/11/OaI8qP.jpg' mode='widthFix' class='backgroud-image'></image>
     </view>
     <button @click="navTuniaoHome">
       <view class="dong">
@@ -58,7 +51,16 @@
           </view>
         </view>
       </view>
-      
+	  <image  src="https://wx4.sinaimg.cn/large/008khnrTly1h24srah04sg312m0b4gq2.gif" style="height:30rpx;width:100%;margin-top:50px;" mode="widthFix"></image>
+      <view class="tn-flex tn-flex-row-between tn-padding-top-xl">
+        <view class="justify-content-item tn-text-bold tn-text-lg">
+          <text class="">常用功能</text>
+        </view>
+        <view class="justify-content-item tn-text-df">
+          <text class="tn-padding-xs">全部</text>
+          <text class="tn-icon-right"></text>
+        </view>
+      </view>  
       <!-- 更多信息-->
       <view class="about-shadow tn-margin-top-xl tn-padding-top-sm tn-padding-bottom-sm tn-color-black tn-bg-white">
         <!-- 方式12 start-->
@@ -271,11 +273,11 @@
 				icon:'identity',
 				color:'orange'
 			},
-			// {
-			// 	title:'我的足迹',
-			// 	icon:'empty-history',
-			// 	color:'purple'
-			// },
+			{
+				title:'我的足迹',
+				icon:'empty-history',
+				color:'purple'
+			},
 			{
 			  title: '今晚可以',
 			  icon: 'like',
@@ -291,51 +293,8 @@
 			  icon: 'like',
 			  color: 'orange',
 			},
-			// {
-			//   title: '限时秒杀',
-			//   icon: 'clock',
-			//   color: 'blue',
-			// },
-          // {
-          //   title: '分销中心',
-          //   icon: 'organizatio',
-          //   color: 'orange',
-          // },
-          // {
-          //   title: '积分商城',
-          //   icon: 'level',
-          //   color: 'purple',
-          // },
-          // {
-          //   title: '限时秒杀',
-          //   icon: 'clock',
-          //   color: 'blue',
-          // },
-          // {
-          //   title: '社区团购',
-          //   icon: 'team',
-          //   color: 'purplered',
-          // },
-          // {
-          //   title: '大转盘',
-          //   icon: 'group-circle',
-          //   color: 'teal',
-          // },
-          // {
-          //   title: '商品核销',
-          //   icon: 'scan',
-          //   color: 'orangered',
-          // },
-          // {
-          //   title: '满减优惠',
-          //   icon: 'coupon',
-          //   color: 'indigo',
-          // },
-          // {
-          //   title: '视频直播',
-          //   icon: 'video',
-          //   color: 'green',
-          // }
+			
+			
         ]
       }
     },
