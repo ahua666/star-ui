@@ -48,7 +48,7 @@
             <!-- 图标logo -->
             <view class="logo-pic tn-shadow" >
               <view class="logo-image">
-                <view class="tn-icon-logo-tuniao" style="font-size: 140rpx;color: #01BEFF;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"></view>
+                <!-- <view class="tn-icon-logo-tuniao" style="font-size: 140rpx;color: #01BEFF;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"></view> -->
               </view>
             </view>
             <view class="tn-padding-right tn-color-white">
