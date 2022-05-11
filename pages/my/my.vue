@@ -89,7 +89,7 @@
                 <view class="tn-icon-like"></view>
               </view>  
               <view class="tn-text-center">
-                <text class="tn-text-ellipsis">我的关注</text>
+                <text class="tn-text-ellipsis">关注</text>
               </view>
             </view>
           </view>
@@ -99,7 +99,7 @@
                 <view class="tn-icon-team"></view>
               </view>  
               <view class="tn-text-center">
-                <text class="tn-text-ellipsis">我的粉丝</text>
+                <text class="tn-text-ellipsis">粉丝</text>
               </view>
             </view>
           </view>
