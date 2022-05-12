@@ -5,7 +5,7 @@
 		<mydemo v-if="tabberPageLoadFlag[2]" :style="{display: currentIndex === 2 ? '' : 'none'}" ref="mydemo"></mydemo>
 		<my v-if="tabberPageLoadFlag[3]" :style="{display: currentIndex === 3 ? '' : 'none'}" ref="about"></my>
 		<tn-tabbar v-model="currentIndex" :list="tabbarList" activeColor="#838383" inactiveColor="#AAAAAA"
-			activeIconColor="tn-cool-bg-color-16" :animation="true" :safeAreaInsetBottom="true" @change="switchTabbar">
+			activeIconColor="tn-cool-bg-color-7" :animation="true" :safeAreaInsetBottom="true" @change="switchTabbar">
 		</tn-tabbar>
 	</view>
 </template>
