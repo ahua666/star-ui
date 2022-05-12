@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Star UI",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-tabbar": "/tuniao-ui/components/tn-tabbar/tn-tabbar",
+    "my": "/pages/my/my"
+  }
+}
