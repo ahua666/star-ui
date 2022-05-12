@@ -17,7 +17,25 @@
 			}
 
 		}
-	],
+	    ,{
+            "path" : "pages/home/home",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mydemo/mydemo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	// "preloadRule": {
 	//   "pages/index/index": {
 	//     "network": "all",
