@@ -1,24 +1,28 @@
 <template>
 	<view class="index">
-		<home v-if="tabberPageLoadFlag[0]" :style="{display: currentIndex === 0 ? '' : 'none'}" ref="home"></home>
-		<my v-if="tabberPageLoadFlag[1]" :style="{display: currentIndex === 1 ? '' : 'none'}" ref="about"></my>
-		<mydemo v-if="tabberPageLoadFlag[2]" :style="{display: currentIndex === 2 ? '' : 'none'}" ref="mydemo"></mydemo>
-		<my v-if="tabberPageLoadFlag[3]" :style="{display: currentIndex === 3 ? '' : 'none'}" ref="about"></my>
-		<tn-tabbar v-model="currentIndex" :list="tabbarList" activeColor="#838383" inactiveColor="#AAAAAA"
-			activeIconColor="tn-cool-bg-color-7" :animation="true" :safeAreaInsetBottom="true" @change="switchTabbar">
+		<home2 v-if="tabberPageLoadFlag[0]" :style="{display: currentIndex === 0 ? '' : 'none'}" ref="home"></home2>
+		<hot v-if="tabberPageLoadFlag[1]" :style="{display: currentIndex === 1 ? '' : 'none'}" ref="hot"></hot>
+		<mydemo v-if="tabberPageLoadFlag[3]" :style="{display: currentIndex === 3 ? '' : 'none'}" ref="mydemo"></mydemo>
+		<my v-if="tabberPageLoadFlag[2]" :style="{display: currentIndex === 2 ? '' : 'none'}" ref="about"></my>
+		<tn-tabbar height='120' bgColor="rgb(255 255 255 / 31%)" v-model="currentIndex" :list="tabbarList" activeColor="#3a6df0" inactiveColor="#3c3a3a"
+			inactiveIconColor="#3c3a3a" activeIconColor="rgba(58 109 240 / 80%)" :animation="true" :safeAreaInsetBottom="true" @change="switchTabbar">
 		</tn-tabbar>
+		<!-- rgba(16 18 27 / 40%)黑暗 -->
+		<!-- 浅色rgb(255 255 255 / 31%) -->
 	</view>
 </template>
 
 <script>
 	import My from '../my/my.vue'
 	import Mydemo from '../mydemo/mydemo.vue'
-	import Home from '../home/home.vue'
+	import Home2 from '../home2/home2.vue'
+	import Hot from '../hot/hot.vue'
 	export default {
 		components: {
 			My,
-			Home,
+			Home2,
 			Mydemo,
+			Hot,
 		},
 		data() {
 			return {
@@ -86,9 +90,11 @@
 </script>
 
 <style>
+
 	.index {
 		overflow: hidden;
 		height: 100%;
+		
 	}
 
 	.custom-tabbar-page {

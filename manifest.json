@@ -1,6 +1,6 @@
 {
-    "name" : "赏金",
-    "appid" : "",
+    "name" : "壁纸",
+    "appid" : "__UNI__9A5056B",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -50,7 +50,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wx805b58db98563b9e",
+        "appid" : "wx401ad5caffd6a9dd",
         "setting" : {
             "urlCheck" : false,
             "minified" : true

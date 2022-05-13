@@ -46,7 +46,7 @@
   height: 20rpx;
   margin-top: -12rpx;
   border-width: 4rpx 4rpx 0 0;
-  border-color: #E6E6E6;
+  border-color: #e6e6e6;
   border-style: solid;
   -webkit-transform: matrix(0.5, 0.5, -0.5, 0.5, 0, 0);
           transform: matrix(0.5, 0.5, -0.5, 0.5, 0, 0);

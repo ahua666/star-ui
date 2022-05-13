@@ -2,7 +2,7 @@
   <view class="template-about tn-safe-area-inset-bottom">
     
     <view class="top-backgroup">
-      <image src='https://s1.ax1x.com/2022/05/11/OaI8qP.jpg' mode='widthFix' class='backgroud-image'></image>
+      <image src='https://note.youdao.com/yws/public/resource/59dee57d6f3be28543801f1539475cd1/xmlnote/WEBRESOURCEc31c6f5485d3b151afe8efb26d5e031f/42' mode='widthFix' class='backgroud-image'></image>
     </view>
     <button @click="navTuniaoHome">
       <view class="dong">
@@ -37,7 +37,7 @@
             <!-- 图标logo -->
             <view class="logo-pic tn-shadow" >
               <view class="logo-image">
-				  <image src="http://q1.qlogo.cn/g?b=qq&nk=2524329629&s=640" style="width:88px;height: 88px; 140rpx;color: #01BEFF;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"></image>
+				  <image src="http://q1.qlogo.cn/g?b=qq&nk=2524329629&s=640" style="width:140rpx;height: 140rpx;color: #01BEFF;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"></image>
                 <!-- <view class="tn-icon-logo-tuniao" style="font-size: 140rpx;color: #01BEFF;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"></view> -->
               </view>
             </view>
@@ -329,8 +329,8 @@
   
   /* 用户头像 start */
   .logo-image{
-    width: 120rpx;
-    height: 120rpx;
+    width: 140rpx;
+    height: 140rpx;
     position: relative;
   }
   .logo-pic{

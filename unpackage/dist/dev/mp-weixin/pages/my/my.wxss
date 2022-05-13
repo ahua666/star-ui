@@ -74,8 +74,8 @@
 /* 顶部背景图 end */
 /* 用户头像 start */
 .logo-image.data-v-0be17cc6 {
-  width: 120rpx;
-  height: 120rpx;
+  width: 140rpx;
+  height: 140rpx;
   position: relative;
 }
 .logo-pic.data-v-0be17cc6 {

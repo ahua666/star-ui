@@ -10,7 +10,10 @@
       }"
       :style="{
         height: height + 'rpx',
-        backgroundColor: bgColor
+        backgroundColor: bgColor,
+		'border-radius': '100px',
+		'backdrop-filter': 'blur(20px)',
+		'-webkit-backdrop-filter':'blur(20px)',
       }"
     >
       <!-- tabbar item -->
@@ -20,11 +23,12 @@
         class="tn-tabbar__content__item"
         :id="`tabbar_item_${index}`"
         :class="{'tn-tabbar__content__item--out': item.out}"
-        :style="{
-          backgroundColor: bgColor
-        }"
+        
         @tap.stop="clickItemHandler(index)"
       >
+	  <!--TODO 这里是按钮背景 把他给屏蔽掉	 :style="{
+          backgroundColor: bgColor
+        }" -->
         <!-- tabbar item的图片或者icon-->
         <view :class="[itemButtonClass(index)]"
           :style="[itemButtonStyle(index)]"
@@ -179,7 +183,7 @@
       // 是否显示阴影
       shadow: {
         type: Boolean,
-        default: true
+        default: false
       },
       // 点击时是否有动画
       animation: {
@@ -415,9 +419,18 @@
 </script>
 
 <style lang="scss" scoped>
-  
+  .tn-tabbar__content{
+	  // box-shadow: 5px 5px 14px #12121a,-5px -5px 14px #4a4a68;
+	      backdrop-filter: blur(50px);
+	      -webkit-backdrop-filter: blur(50px);
+		  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.45) 100%);
+		  -webkit-backdrop-filter: saturate(3);
+		  backdrop-filter: saturate(3);	
+		  overflow: hidden;
+		  box-shadow: 18px 18px 32px #61616152, -18px -18px 32px #8b8b8b54;
+  }
   .tn-tabbar {
-    
+
     &__content {
       box-sizing: content-box;
       display: flex;
@@ -435,7 +448,7 @@
         transform: translateX(-50%);
         
         &--shadow {
-          box-shadow: 0rpx -10rpx 30rpx 0rpx rgba(0, 0, 0, 0.05);
+          // box-shadow: 0rpx -10rpx 30rpx 0rpx rgba(0, 0, 0, 0.05);
           
           &::before {
             content: " ";
@@ -457,7 +470,7 @@
           }
         }
       }
-      
+     
       &__item {
         flex: 1;
         display: flex;
@@ -466,7 +479,13 @@
         align-items: center;
         height: 100%;
         position: relative;
-        
+		
+        &:nth-child(1) {
+            border-radius: 30px 0px 0px 0px;
+        }
+		&:nth-child(4) {
+		    border-radius: 0px 30px 0px 0px;
+		}
         &__button {
           margin-bottom: 10rpx;
           display: flex;
@@ -533,7 +552,7 @@
     }
     
     &--shadow {
-      box-shadow: 0rpx 0rpx 30rpx 0rpx rgba(0, 0, 0, 0.07);
+      // box-shadow: 0rpx 0rpx 30rpx 0rpx rgba(0, 0, 0, 0.07);
     }
   }
   

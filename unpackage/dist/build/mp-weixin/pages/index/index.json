@@ -3,6 +3,9 @@
   "enablePullDownRefresh": false,
   "usingComponents": {
     "tn-tabbar": "/tuniao-ui/components/tn-tabbar/tn-tabbar",
-    "my": "/pages/my/my"
+    "my": "/pages/my/my",
+    "home2": "/pages/home2/home2",
+    "mydemo": "/pages/mydemo/mydemo",
+    "hot": "/pages/hot/hot"
   }
 }

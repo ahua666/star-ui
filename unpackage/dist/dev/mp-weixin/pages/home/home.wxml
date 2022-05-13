@@ -1,1 +1,1 @@
-<view class="home"><view class="home-head1 heads"></view><view class="home-head2 heads"></view><view class="home-head3 heads"></view></view>
+<view class="home tn-safe-area-inset-bottom data-v-92bb8f34"><view class="home-head data-v-92bb8f34"><view class="home-head1 heads data-v-92bb8f34"></view><view class="home-head2 heads data-v-92bb8f34"></view><view class="home-head3 heads data-v-92bb8f34"><view class="home__wrap data-v-92bb8f34"><tn-swiper vue-id="1da55560-1" list="{{list}}" class="data-v-92bb8f34" bind:__l="__l"></tn-swiper></view></view></view></view>

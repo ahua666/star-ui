@@ -1,37 +1,32 @@
 {
-    "description": "项目配置文件。",
+    "description": "项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
     "packOptions": {
-        "ignore": []
+        "ignore": [],
+        "include": []
     },
     "setting": {
         "urlCheck": false,
-        "es6": true,
-        "enhance": true,
-        "postcss": true,
-        "preloadBackgroundData": false,
+        "es6": false,
+        "postcss": false,
         "minified": true,
-        "newFeature": false,
+        "newFeature": true,
+        "bigPackageSizeSupport": true,
+        "enhance": true,
+        "preloadBackgroundData": false,
         "coverView": true,
-        "nodeModules": false,
         "autoAudits": false,
         "showShadowRootInWxmlPanel": true,
-        "scopeDataCheck": false,
         "uglifyFileName": false,
         "checkInvalidKey": true,
-        "checkSiteMap": true,
         "uploadWithSourceMap": true,
         "compileHotReLoad": true,
         "lazyloadPlaceholderEnable": false,
         "useMultiFrameRuntime": true,
-        "useApiHook": true,
-        "useApiHostProcess": true,
         "babelSetting": {
             "ignore": [],
             "disablePlugins": [],
             "outputPath": ""
         },
-        "useIsolateContext": false,
-        "userConfirmedBundleSwitch": false,
         "packNpmManually": false,
         "packNpmRelationList": [],
         "minifyWXSS": true,
@@ -39,24 +34,15 @@
         "showES6CompileOption": false,
         "useCompilerPlugins": false,
         "ignoreUploadUnusedFiles": true,
-        "minifyWXML": true
+        "useStaticServer": true
     },
     "compileType": "miniprogram",
-    "libVersion": "",
+    "libVersion": "2.24.2",
     "appid": "wxed30b0cafb3d9581",
-    "projectname": "赏金",
-    "condition": {
-        "search": {
-            "list": []
-        },
-        "conversation": {
-            "list": []
-        },
-        "game": {
-            "list": []
-        },
-        "miniprogram": {
-            "list": []
-        }
+    "projectname": "壁纸",
+    "condition": {},
+    "editorSetting": {
+        "tabIndent": "insertSpaces",
+        "tabSize": 4
     }
 }

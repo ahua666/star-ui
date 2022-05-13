@@ -8,7 +8,7 @@
 		      <!-- 图标logo -->
 		      <view class="logo-pic tn-shadow" >
 		        <view class="logo-image">
-						  <image src="http://q1.qlogo.cn/g?b=qq&nk=2524329629&s=640" style="width:70px;height: 70px;color: #01BEFF;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); margin: -1px;"></image>
+						  <image src="http://q1.qlogo.cn/g?b=qq&nk=2524329629&s=640" style="width:140rpx;height: 140rpx;color: #01BEFF;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); margin: -1px;"></image>
 		          <!-- <view class="tn-icon-logo-tuniao" style="font-size: 140rpx;color: #01BEFF;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);"></view> -->
 		        </view>
 		      </view>

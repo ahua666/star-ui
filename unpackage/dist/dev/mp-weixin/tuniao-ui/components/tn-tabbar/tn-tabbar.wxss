@@ -25,6 +25,15 @@
 /* 透明度 */
 /* 文章场景相关 */
 .tn-tabbar__content.data-v-3972e4a0 {
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.45) 100%);
+  -webkit-backdrop-filter: saturate(3);
+  backdrop-filter: saturate(3);
+  overflow: hidden;
+  box-shadow: 18px 18px 32px #61616152, -18px -18px 32px #8b8b8b54;
+}
+.tn-tabbar__content.data-v-3972e4a0 {
   box-sizing: content-box;
   display: flex;
   flex-direction: row;
@@ -40,9 +49,6 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-.tn-tabbar__content__out--shadow.data-v-3972e4a0 {
-  box-shadow: 0rpx -10rpx 30rpx 0rpx rgba(0, 0, 0, 0.05);
 }
 .tn-tabbar__content__out--shadow.data-v-3972e4a0::before {
   content: " ";
@@ -69,6 +75,12 @@
   align-items: center;
   height: 100%;
   position: relative;
+}
+.tn-tabbar__content__item.data-v-3972e4a0:nth-child(1) {
+  border-radius: 30px 0px 0px 0px;
+}
+.tn-tabbar__content__item.data-v-3972e4a0:nth-child(4) {
+  border-radius: 0px 30px 0px 0px;
 }
 .tn-tabbar__content__item__button.data-v-3972e4a0 {
   margin-bottom: 10rpx;
@@ -119,9 +131,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-}
-.tn-tabbar--shadow.data-v-3972e4a0 {
-  box-shadow: 0rpx 0rpx 30rpx 0rpx rgba(0, 0, 0, 0.07);
 }
 /* 点击动画 start */
 @-webkit-keyframes tabbar-item-button-click-data-v-3972e4a0 {

@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "tn-swiper": "/tuniao-ui/components/tn-swiper/tn-swiper"
+  }
 }

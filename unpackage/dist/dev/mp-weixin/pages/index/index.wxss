@@ -74,8 +74,8 @@
 /* 顶部背景图 end */
 /* 用户头像 start */
 .logo-image.data-v-0be17cc6 {
-  width: 120rpx;
-  height: 120rpx;
+  width: 140rpx;
+  height: 140rpx;
   position: relative;
 }
 .logo-pic.data-v-0be17cc6 {
@@ -1547,44 +1547,180 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.home {
+page.data-v-9749c424 {
+  background-image: url("https://vkceyugu.cdn.bspapp.com/VKCEYUGU-24e90c90-9fc1-4fdd-b14d-10d70f24a492/6eb259d3-0c82-418b-bf7c-c692c2e700e6.jpg");
+}
+.video-bg.data-v-9749c424 {
+  position: fixed;
+  right: 0;
+  top: 0;
   width: 100%;
-  height: 667rpx;
-  background-image: linear-gradient(to right, #485563, #29323c);
+  height: 100%;
+  background-image: url("https://vkceyugu.cdn.bspapp.com/VKCEYUGU-24e90c90-9fc1-4fdd-b14d-10d70f24a492/6eb259d3-0c82-418b-bf7c-c692c2e700e6.jpg");
+}
+.video-bg video.data-v-9749c424 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-image: url("https://vkceyugu.cdn.bspapp.com/VKCEYUGU-24e90c90-9fc1-4fdd-b14d-10d70f24a492/6eb259d3-0c82-418b-bf7c-c692c2e700e6.jpg");
+}
+.star-maoboli.data-v-9749c424 {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+.star-light.data-v-9749c424 {
+  width: 100%;
+  height: 100%;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  position: relative;
-}
-.home-head1 {
-  width: 90%;
-  background-color: white;
-  height: 368px;
-  position: relative;
-  top: 35%;
-  border-radius: 5%;
-  margin: 0 auto;
-  opacity: 0.6;
-}
-.home-head2 {
-  width: 95%;
-  background-color: white;
-  height: 667rpx;
   position: absolute;
-  top: 37%;
-  border-radius: 5%;
-  margin: auto;
-  opacity: 0.7;
-  left: 20rpx;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.45) 100%);
+  -webkit-backdrop-filter: saturate(3);
+  backdrop-filter: saturate(3);
 }
-.home-head3 {
+.home.data-v-9749c424 {
   width: 100%;
-  background-color: white;
-  height: 667rpx;
+  height: 100%;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position: absolute;
-  top: 39%;
-  border-radius: 5%;
-  margin: auto;
-  opacity: 1;
 }
+.home-head.data-v-9749c424 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+}
+.home__wrap.data-v-9749c424 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+.home-head1.data-v-9749c424 {
+  width: 90%;
+  background-color: rgba(40, 40, 40, 0.35);
+  height: 80%;
+  position: relative;
+  top: 20%;
+  border-radius: 5% 5% 0% 0%;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 0.5s ease;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+.home-head2.data-v-9749c424 {
+  width: 95%;
+  background-color: rgba(40, 40, 40, 0.55);
+  height: 79%;
+  position: absolute;
+  top: 21%;
+  border-radius: 5% 5% 0% 0%;
+  margin: auto;
+  opacity: 0;
+  left: 20rpx;
+  transition: 0.5s ease;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+.home-head3.data-v-9749c424 {
+  width: 100%;
+  height: calc(100% - 200rpx);
+  position: absolute;
+  top: 100rpx;
+  margin: auto;
+  opacity: 0.8;
+}
+
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 胶囊*/
+.tn-custom-nav-bar__back.data-v-41251cbc {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 1000rpx;
+  border: 1rpx solid rgba(255, 255, 255, 0.5);
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.tn-custom-nav-bar__back .icon.data-v-41251cbc {
+  display: block;
+  flex: 1;
+  margin: auto;
+  text-align: center;
+}
+.tn-custom-nav-bar__back.data-v-41251cbc:before {
+  content: " ";
+  width: 1rpx;
+  height: 110%;
+  position: absolute;
+  top: 22.5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  opacity: 0.7;
+  background-color: #FFFFFF;
+}
+/* 底部悬浮按钮 start*/
+.tn-tabbar-height.data-v-41251cbc {
+  min-height: 100rpx;
+  height: calc(120rpx + env(safe-area-inset-bottom) / 2);
+}
+.tn-footerfixed.data-v-41251cbc {
+  position: fixed;
+  width: 100%;
+  bottom: calc(120rpx + env(safe-area-inset-bottom));
+  z-index: 1024;
+  box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0);
+}
+/* 底部悬浮按钮 end*/
+/* 标签内容 start*/
+.tn-tag-content__item.data-v-41251cbc {
+  display: inline-block;
+  line-height: 45rpx;
+  padding: 10rpx 30rpx;
+  margin: 20rpx 20rpx 5rpx 0rpx;
+}
+.tn-tag-content__item--prefix.data-v-41251cbc {
+  padding-right: 10rpx;
+}
+/* 标签内容 end*/
 
 
 .index {
