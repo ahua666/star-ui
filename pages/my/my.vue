@@ -2,7 +2,7 @@
   <view class="template-about tn-safe-area-inset-bottom">
     
     <view class="top-backgroup">
-      <image src='https://s1.ax1x.com/2022/05/11/OaI8qP.jpg' mode='widthFix' class='backgroud-image'></image>
+      <image src='https://bucket-ynote-online-cdn.note.youdao.com/qq9560F12DDDB1F67A622C32F082D55B1D%2F63EEEE5930D14121B8C25DA56A6C9088?download=OaI8qP.jpg&Signature=SVmUbdhgxVs%2B4AuwPnKkgvaL%2FV28IDcdwQJo8fVDubg%3D&Expires=1652435537&NOSAccessKeyId=e7d1acab859342789faa85a4b0cb4c83' mode='widthFix' class='backgroud-image'></image>
     </view>
     <button @click="navTuniaoHome">
       <view class="dong">

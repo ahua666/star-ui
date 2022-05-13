@@ -20,14 +20,11 @@
         "compileHotReLoad": false,
         "lazyloadPlaceholderEnable": false,
         "useMultiFrameRuntime": true,
-        "useApiHook": true,
-        "useApiHostProcess": true,
         "babelSetting": {
             "ignore": [],
             "disablePlugins": [],
             "outputPath": ""
         },
-        "useIsolateContext": true,
         "packNpmManually": false,
         "packNpmRelationList": [],
         "minifyWXSS": true,
@@ -35,7 +32,6 @@
         "showES6CompileOption": false,
         "useCompilerPlugins": false,
         "ignoreUploadUnusedFiles": true,
-        "minifyWXML": true,
         "useStaticServer": true
     },
     "compileType": "miniprogram",

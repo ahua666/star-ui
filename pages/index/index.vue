@@ -1,7 +1,7 @@
 <template>
 	<view class="index">
 		<home v-if="tabberPageLoadFlag[0]" :style="{display: currentIndex === 0 ? '' : 'none'}" ref="home"></home>
-		<my v-if="tabberPageLoadFlag[1]" :style="{display: currentIndex === 1 ? '' : 'none'}" ref="about"></my>
+		<hot v-if="tabberPageLoadFlag[1]" :style="{display: currentIndex === 1 ? '' : 'none'}" ref="hot"></hot>
 		<mydemo v-if="tabberPageLoadFlag[2]" :style="{display: currentIndex === 2 ? '' : 'none'}" ref="mydemo"></mydemo>
 		<my v-if="tabberPageLoadFlag[3]" :style="{display: currentIndex === 3 ? '' : 'none'}" ref="about"></my>
 		<tn-tabbar v-model="currentIndex" :list="tabbarList" activeColor="#838383" inactiveColor="#AAAAAA"
@@ -14,11 +14,13 @@
 	import My from '../my/my.vue'
 	import Mydemo from '../mydemo/mydemo.vue'
 	import Home from '../home/home.vue'
+	import Hot from '../hot/hot.vue'
 	export default {
 		components: {
 			My,
 			Home,
 			Mydemo,
+			Hot,
 		},
 		data() {
 			return {

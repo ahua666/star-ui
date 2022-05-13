@@ -5,6 +5,7 @@
     "tn-tabbar": "/tuniao-ui/components/tn-tabbar/tn-tabbar",
     "my": "/pages/my/my",
     "home": "/pages/home/home",
-    "mydemo": "/pages/mydemo/mydemo"
+    "mydemo": "/pages/mydemo/mydemo",
+    "hot": "/pages/hot/hot"
   }
 }

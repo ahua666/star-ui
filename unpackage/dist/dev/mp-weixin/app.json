@@ -1,24 +1,26 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/my/my",
-        "pages/home/home",
-        "pages/mydemo/mydemo"
-    ],
-    "subPackages": [],
-    "window": {
-        "navigationStyle": "custom",
-        "navigationBarTextStyle": "black",
-        "navigationBarTitleText": "Star",
-        "navigationBarBackgroundColor": "#F8F8F8",
-        "backgroundColor": "#F8F8F8"
-    },
-    "permission": {
-        "scope.userLocation": {
-            "desc": "定位城市，根据城市获取内容"
-        }
-    },
-    "lazyCodeLoading": "requiredComponents",
-    "usingComponents": {},
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/home/home",
+    "pages/mydemo/mydemo",
+    "pages/hot/hot",
+    "pages/home2/home2",
+    "pages/home1/home1"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Star",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "定位城市，根据城市获取内容"
+    }
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {}
 }

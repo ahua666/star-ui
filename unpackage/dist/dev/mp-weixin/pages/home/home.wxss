@@ -24,42 +24,55 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.home {
-  width: 100%;
-  height: 667rpx;
-  background-image: linear-gradient(to right, #485563, #29323c);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  position: relative;
+.home__wrap.data-v-92bb8f34 {
+  position: absolute;
+  z-index: 1;
+  margin: 16px 16px;
+  margin-top: -126px;
+  top: 17%;
+  width: 92%;
+  overflow: scroll;
+  height: 75%;
 }
-.home-head1 {
+.home-head.data-v-92bb8f34 {
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(933.4px at 0.9% -2.6%, #01dcd7 0%, #abc4fb 47.6%, #e0bcfd 72.8%, #ffb6c2 100.3%);
+  position: fixed;
+  top: 0;
+  transition: all .3s;
+}
+.home-head1.data-v-92bb8f34 {
   width: 90%;
   background-color: white;
-  height: 368px;
+  height: 100%;
   position: relative;
-  top: 35%;
+  top: 10%;
   border-radius: 5%;
   margin: 0 auto;
   opacity: 0.6;
 }
-.home-head2 {
+.home-head2.data-v-92bb8f34 {
   width: 95%;
   background-color: white;
-  height: 667rpx;
+  height: 100%;
   position: absolute;
-  top: 37%;
+  top: 11%;
   border-radius: 5%;
   margin: auto;
   opacity: 0.7;
-  left: 20rpx;
+  left: 10px;
 }
-.home-head3 {
+.home-head3.data-v-92bb8f34 {
   width: 100%;
   background-color: white;
-  height: 667rpx;
-  position: absolute;
-  top: 39%;
+  height: 100%;
+  top: 12%;
   border-radius: 5%;
   margin: auto;
   opacity: 1;
+  position: absolute;
+  z-index: 99;
+  overflow: hidden;
 }
 
