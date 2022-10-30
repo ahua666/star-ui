@@ -4,7 +4,7 @@
   "usingComponents": {
     "tn-tabbar": "/tuniao-ui/components/tn-tabbar/tn-tabbar",
     "my": "/pages/my/my",
-    "home2": "/pages/home2/home2",
+    "home": "/pages/home/home",
     "mydemo": "/pages/mydemo/mydemo",
     "hot": "/pages/hot/hot"
   }
