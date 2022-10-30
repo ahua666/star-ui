@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-switch": "/tuniao-ui/components/tn-switch/tn-switch"
+  }
+}

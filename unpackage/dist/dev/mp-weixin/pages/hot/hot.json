@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-image-upload": "/tuniao-ui/components/tn-image-upload/tn-image-upload",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button"
+  }
+}
