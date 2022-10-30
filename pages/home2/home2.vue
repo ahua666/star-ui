@@ -101,7 +101,7 @@ page {
 	position: absolute;
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.45) 100%);
 	-webkit-backdrop-filter: saturate(3);
-	backdrop-filter: saturate(3);
+	backdrop-filter: saturate(3);	
 	
 }
 .home {
@@ -112,7 +112,7 @@ page {
 	// radial-gradient(933.4px at 0.9% -2.6%, rgb(1, 220, 215) 0%, rgb(171, 196, 251) 47.6%, rgb(224, 188, 253) 72.8%, rgb(255, 182, 194) 100.3%);
 	position: absolute;
 	//浅色模式
-	
+	backdrop-filter: blur(20px);
 	// rgba(16 18 27 / 40%)
 	// background-color: rgba(16, 18 ,27 ,0.4);
 	

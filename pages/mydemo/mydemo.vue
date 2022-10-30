@@ -60,7 +60,7 @@
     <view class="about__wrap" style="margin-top: -454rpx;">
       
 
-	  <image  src="https://note.youdao.com/yws/public/resource/59dee57d6f3be28543801f1539475cd1/xmlnote/WEBRESOURCE79ba6e983f002d52edf0db79ea0de67a/40" style="height:30rpx;width:100%;margin-top:50px;" mode="widthFix"></image>
+	  <image  src="https://bucket-ynote-online-cdn.note.youdao.com/qq9560F12DDDB1F67A622C32F082D55B1D%2F2EE911E27A49482DB23F69B659E81490?download=ezgif-2-628050008e.gif&Signature=PNgoFV0T9zuTwAHFNMxzALuEFrMxDKZelzzBjpei9VE%3D&Expires=1652435632&NOSAccessKeyId=e7d1acab859342789faa85a4b0cb4c83" style="height:30rpx;width:100%;margin-top:50px;" mode="widthFix"></image>
       <view class="tn-flex tn-flex-row-between tn-padding-top-xl">
         <view class="justify-content-item tn-text-bold tn-text-lg">
           <text class="">常用功能</text>

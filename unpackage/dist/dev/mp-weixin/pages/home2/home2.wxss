@@ -59,6 +59,8 @@ page.data-v-9749c424 {
   height: 100%;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position: absolute;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 .home-head.data-v-9749c424 {
   width: 100%;
